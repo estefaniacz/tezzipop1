@@ -1,0 +1,252 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Goligan', sans-serif;
+    box-sizing: border-box;
+}
+h2 {
+    color: #9C8FB4;
+    padding-top: 30px;
+    font-size: 60px;
+    padding-left: 30px;
+}
+h3 {
+    padding-bottom: 30px;
+
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left: 30px;
+}
+header {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #DBCADB;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 60px;
+    background: #DBCADB;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #navbar li {
+        list-style: none;
+        padding: 0 30px;
+    }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: #B18FA3;
+        }
+
+            #navbar li a:hover,
+            #navbar li a:active {
+                color: #AB7991;
+                transition: .5s ease;
+            }
+
+            #navbar li a:after {
+                content: "";
+                width: 30%;
+                height: 2px;
+                background: white;
+                position: absolute;
+                bottom: -4px;
+                left: 20px;
+            }
+
+#cart-icon {
+    cursor: pointer;
+    color: #B18FA3;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    padding: 30px;
+}
+
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: transparent;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+}
+
+input[type=text] {
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    float:right;
+    color: white;
+    border: 1px solid #F7EBE4;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: #9C8FB4;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-family: 'Goligan', sans-serif;
+}
+
+    .btn:hover {
+        display: inline-block;
+        float: right;
+        color: #9C8FB4;
+        border: 1px solid #9C8FB4;
+        padding: 12px 34px;
+        font-size: 20px;
+        background: transparent;
+        cursor: pointer;
+        width: 150px;
+        margin: 20px auto 0;
+        border-radius: 30px;
+        font-family: 'Goligan', sans-serif;
+        transition: 0.5s;
+    }
+
+a {
+    color: #2196F3;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+.footer-basic {
+    padding: 40px 0;
+    background-color: #D8CBDA;
+    color: #AB7991;
+}
+
+    .footer-basic ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    .footer-basic li {
+        padding: 0 10px;
+    }
+
+    .footer-basic ul a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+        .footer-basic ul a:hover {
+            opacity: 1;
+        }
+
+    .footer-basic .social {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+        .footer-basic .social > a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #B18FA3;
+            margin: 0 8px;
+            color: inherit;
+            opacity: 0.75;
+        }
+
+            .footer-basic .social > a:hover {
+                opacity: 0.9;
+            }
+
+    .footer-basic .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #F9F4F9;
+        margin-bottom: 0;
+    }
+
